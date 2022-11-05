@@ -104,7 +104,7 @@ h1 {
     margin-left: 8px;
 }
 
-#messages {
+#messageBoard {
     display: flex;
     justify-content: center;
     margin-top: 125px;
@@ -128,5 +128,35 @@ h1 {
     color: white;
     padding: 8px;
     justify-content: center;
+    font-size: 12px
 }
 
+#messages {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.resetButtons {
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    background-color: #FF6A3D;
+    font-size: 20px;
+    padding: 6px 12px;
+    margin: 0 4px;
+    transition-duration: .04s
+}
+
+.resetButtons:hover {
+    scale: 1.02;
+    color: #FF6A3D;
+    background-color: white;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
